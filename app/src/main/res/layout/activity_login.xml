@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#BFF698"
+    android:elevation="5dp"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#BFF698"
+        android:layout_height="60dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Making recipies"
+            android:textStyle="bold"
+            android:textColor="#406823"
+            android:elevation="10dp"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/layoutback">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="50dp"
+                android:elevation="10dp"
+                android:layout_gravity="center"
+                >
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:lottie_rawRes="@raw/anfive"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:id="@+id/addimages"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#406823"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp"
+            android:hint="Your Name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:elevation="5dp"
+            app:boxStrokeErrorColor="#CF0707"
+            app:boxStrokeColor="#315C13"
+            app:errorAccessibilityLiveRegion="@integer/material_motion_duration_long_1"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/edname"
+                android:layout_height="60dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40sp"
+            android:defaultFocusHighlightEnabled="true"
+            android:textStyle="bold"
+            android:text="Get Start"
+            android:elevation="15dp"
+            android:padding="10dp"
+            android:id="@+id/getstartbtn"
+            android:textSize="20sp"
+            android:textColor="#406823"
+            android:backgroundTint="#BFF698"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="viewEnd"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:text="from@"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#9E0303"
+                android:layout_height="wrap_content"
+                android:text="mehkaar"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

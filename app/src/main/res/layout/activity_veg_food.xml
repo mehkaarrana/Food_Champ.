@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:id="@+id/ddlnon"
+    android:background="#CCF3B1"
+    android:layout_height="match_parent"
+    tools:context=".VegFood">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+        <!--        <ImageView-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:padding="8dp"-->
+        <!--            android:layout_gravity="end"-->
+        <!--            android:background="#BFF698"-->
+        <!--            android:src="@drawable/baseline_home_24"-->
+        <!--            android:id="@+id/gohomenonveg"/>-->
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_home_24"
+            android:layout_marginLeft="19dp"
+            android:id="@+id/gohomeveg"/>
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Vegetarian Recipes"
+            android:id="@+id/toolbarveg"
+            android:textAlignment="viewStart"
+            android:background="#CCF3B1">
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/layoutback"
+        android:elevation="15dp"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:padding="10sp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="List of Veg Recipes"
+            android:id="@+id/listveg"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#275309"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            android:id="@+id/recycleOfveg"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

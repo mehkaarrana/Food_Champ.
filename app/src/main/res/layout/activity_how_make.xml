@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".HowMake">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:elevation="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0F4D1"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_home_24"
+                android:layout_marginLeft="19dp"
+                android:id="@+id/gohomehm"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="how to maekencn"
+                android:textColor="#1E350E"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="20sp"
+                android:id="@+id/toltaxt"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/cardlink"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40sp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Watch Video on Youtube"
+               android:textSize="16dp"
+               android:layout_gravity="center_vertical"
+               android:id="@+id/watchtext"
+               android:textStyle="bold"/>
+           <ImageView
+               android:layout_width="70dp"
+               android:layout_height="match_parent"
+               android:layout_gravity="end"
+               android:src="@drawable/youtube"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Click here"
+               android:textStyle="bold"
+               android:id="@+id/videolink"
+               android:gravity="center_vertical"
+               android:textColor="#2382CC"/>
+
+       </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="12dp"
+        android:layout_marginBottom="0dp"
+        app:cardCornerRadius="10dp"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/makinglist"
+            android:elevation="0dp"
+            android:layout_margin="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food2"/>
+    </LinearLayout>
+
+
+</LinearLayout>
